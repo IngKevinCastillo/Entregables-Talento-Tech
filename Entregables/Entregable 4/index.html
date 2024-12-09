@@ -1,81 +1,104 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mi</title>
-
-    <link rel="stylesheet" href="./style.css">
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="about-me">
-        <h1>¡Hola! Mi nombre es Kevin Castillo</h1>
-    
-        <p>
-            Soy un estudiante de programación apasionado por la tecnología y el desarrollo de software. Disfruto aprender nuevas herramientas y lenguajes de programación para crear soluciones innovadoras. Mi objetivo es convertirme en un desarrollador profesional y contribuir a proyectos que tengan un impacto positivo en el mundo.
-        </p>
-    
-        <img src="./yo.jpg" alt="Logo">
-    </div>
-
-    <div id="links">
-        <a href="https://www.youtube.com/">YouTube</a>
-        <a href="https://github.com/IngKevinCastillo/Entregables-Talento-Tech/tree/main/Entregables/Entregable%204">GitHub</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-    </div>
-    
-    <div class="hobbies">
-        <h1>Pasatiempos</h1>
-        <ul>
-            <li>Programación</li>
-            <li>Ejercicio</li>
-            <li>Explorar nuevas tecnologías</li>
-        </ul>
-    </div>
-
-    <div class="tasks">
-        <h1>Cosas pendientes</h1>
-        <ol>
-            <li>Terminar el proyecto final</li>
-            <li>Preparar una presentación</li>
-            <li>Organizar mi espacio de trabajo</li>
-        </ol>
-    </div>
-
-    <div class="schedule">
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miercoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Terminar el Proyecto</td>
-                    <td></td>
-                    <td>Descanso</td>
-                    <td></td>
-                    <td>Ir al Centro</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="contact-form">
-        <h1>Formulario de contacto</h1>
-        <form action="">
-            <input required type="text" id="nombre" placeholder="Nombre">
-            <input required type="text" id="descripcion" placeholder="Descripcion">
-            <input required type="email" id="correo" placeholder="Correo">
-            <button type="submit" id="form-button">Enviar informacion</button>
-        </form>
-    </div>
-
-    <script src="./main.js"></script>
+    <header>
+        <div class="container-banner">
+            <img src="./6769264_60111.jpg" alt="Foto personal">
+            <h1>Kevin Andres Castillo Guerrero</h1>
+            <h2>kandrescastillo@unicesar.edu.co</h2>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-item-container">
+                <a href="#perfil">Perfil</a>
+                <a href="#personales">Datos Personales</a>
+                <a href="#estudios">Estudios</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#horario">Horario</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <p>
+                Estudiante de Ingeniería de Sistemas de la Universidad Popular del Cesar, 
+                tengo 20 años y soy de Bucaramanga, Santander. Quiero estudiar y ser profesional 
+                para especializarme en Ciberseguridad.
+            </p>
+            <h3>Tareas Prioritarias:</h3>
+            <ol>
+                <li>Estudiar conceptos avanzados de programación.</li>
+                <li>Practicar habilidades en ciberseguridad.</li>
+                <li>Participar en proyectos colaborativos.</li>
+            </ol>
+            <button onclick="MostrarMensaje()">Mensaje</button>
+        </section>
+        <section id="personales">
+            <h2>Datos Personales</h2>
+            <ul>
+                <li><div class="title">Nombres Completos: </div><div class="data">Kevin Andres Castillo Guerrero</div></li>
+                <li><div class="title">N° Identificación:</div><div class="data">1097093571</div></li>
+                <li><div class="title">Lugar de Nacimiento: </div><div class="data">Bucaramanga, Santander</div></li>
+                <li><div class="title">Contacto: </div><div class="data">kandrescastillo@unicesar.edu.co | 3243671107</div></li>
+            </ul>
+        </section>
+        <section id="estudios">
+            <h2>Estudios Realizados</h2>
+            <ul>
+                <li>Técnico en Sistemas en el SENA</li>
+            </ul>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>Por ahora, ningún trabajo.</li>
+            </ul>
+        </section>
+        <div class="schedule">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terminar el Proyecto</td>
+                        <td></td>
+                        <td>Descanso</td>
+                        <td></td>
+                        <td>Ir al Centro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <form action="" id="contactForm">
+                <label for="name">Nombre: </label>
+                <input type="text" name="name" id="name" size="30">
+                <label for="reason">Motivo de Contacto:</label>
+                <input type="text" name="reason" id="reason" size="30">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" size="40">
+                <input type="submit" value="Enviar">
+            </form>
+            <p>&copy; Derechos Reservados - Página de Kevin</p>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+            <a href="https://www.github.com" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,88 +1,116 @@
-styles.css
-/* General */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    color: #2c3e50;
-    margin-bottom: 10px;
+header{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
-/* Encabezado */
-#about-me {
-    text-align: center;
-    padding: 20px;
-    background-color: #ecf0f1;
+.container-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container-banner img{
+    width: 200px;
+    background: none;
+    box-shadow: 0 0 10px black;
     margin-bottom: 20px;
 }
 
-#about-me h1 {
-    font-size: 2rem;
+.container-banner h1,h3{
+    margin: 0px;
+    color: blue;
 }
 
-#about-me img {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
+.container-banner h3{
+    color: red;
 }
 
-/* Enlaces */
-#links {
-    text-align: center;
-    padding: 10px;
-    background-color: #bdc3c7;
-    margin-bottom: 20px;
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-#links a {
+.navbar-item-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar a{
     text-decoration: none;
-    color: #2980b9;
-    margin: 0 10px;
-    font-weight: bold;
+    padding: 14px 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
 }
 
-#links a:hover {
-    text-decoration: underline;
-    color: #34495e;
+section{ 
+    box-sizing: border-box; 
+    width: 80%; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px black ; 
+    margin: 20px auto; 
 }
 
-/* Secciones de listas */
-.hobbies,
-.tasks {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+section p{
+    text-align: justify;
+    font-size: 18px;
+    color: rgb(131, 125, 117);
 }
 
-.hobbies ul,
-.tasks ol {
-    margin: 0;
-    padding: 0 20px;
+section ul{
+    list-style-type: none;
+    padding: 0;
 }
 
-.hobbies li,
-.tasks li {
-    margin-bottom: 5px;
+section ul li{
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Tabla */
+section ul li .title{
+    background-color: #fff;
+    margin:  5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 20%;
+}
+
+section ul li .data{
+    border: solid #333;
+    border-width: 1px;
+    margin: 5px 0;
+    padding:10px;
+    border-radius: 5px;
+    width: 75%;
+}
+
+section:hover{
+    background-color: rgb(161, 231, 208);
+}
+
 .schedule {
+    width: 76.7%; 
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 20px auto; 
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px black; 
 }
+
 
 .schedule table {
     width: 100%;
@@ -105,33 +133,26 @@ h1 {
     background-color: #f4f4f4;
 }
 
-/* Formulario */
-.contact-form {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input,
-.contact-form button {
-    display: block;
-    width: 100%;
+input, button{
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    margin: 5px 0;
+    border-radius:  4px;
+    border: 1px solid #333;
 }
 
-.contact-form button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    cursor: pointer;
+button, input[type= "submit"]:hover{
+    background-color: green;
+    box-shadow: 0 0 10px black;
 }
 
-.contact-form button:hover {
-    background-color: #2ecc71;
+footer{
+    background-color: #333;
+    color:  white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 80%;
+    bottom: 0;
+    margin: 0 auto;
+    border-radius: 8px;
 }

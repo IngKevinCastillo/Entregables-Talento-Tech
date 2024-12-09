@@ -1,16 +1,16 @@
-main.js
-const form = document.querySelector(".contact-form form");
+function MostrarMensaje() {
+    alert("¡¡Holaaa!!, Bienvenido a Mi Página");
+}
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const nombre = document.getElementById('nombre').value;
-    const descripcion = document.getElementById('descripcion').value;
-    const correo = document.getElementById('correo').value;
-
-    console.log("Nombre:", nombre);
-    console.log("Descripción:", descripcion);
-    console.log("Correo:", correo);
-
-    alert("Hola " + nombre + ", su correo es " + correo + " y su motivo de contacto es: \n" + descripcion);
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value;
+    const reason = document.getElementById('reason').value;
+    const email = document.getElementById('email').value;
+    if (name === '' || reason === '' || email === '') {
+        alert('Por favor, completa todos los campos.');
+        event.preventDefault();
+    } else {
+        alert('¡Formulario enviado correctamente!');
+    }
 });
