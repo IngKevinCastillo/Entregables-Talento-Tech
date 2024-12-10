@@ -5,43 +5,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseDeDatos = [
         {
             id: 1,
-            nombre: 'Sombrero vueltiao con la bandera de Colombia, 23 vueltas',
-            precio: 250000,
+            nombre: 'Nevera Tactil de Ultima Generacion',
+            precio: 1000000,
             imagen: 'assets/img/feature_prod_01.jpg',
-            categoria: 'sombreros'
+            categoria: 'neveras'
         },
         {
             id: 2,
-            nombre: 'Sombrero vueltiao-machiembriao',
+            nombre: 'TV Samsung 4k 60 Pulgadas',
             precio: 150000,
-            imagen: 'assets/img/sombrero4.jpg',
+            imagen: 'assets/img/feature_prod_01.png',
             categoria: 'sombreros'
         },
         {
             id: 3,
-            nombre: 'Sombrero vueltiao colombiano 15 vueltas tricolor',
-            precio: 250000,
+            nombre: 'Estufa Mabe 2024',
+            precio: 800000,
             imagen: 'assets/img/feature_prod_02.jpg',
             categoria: 'sombreros'
         },
         {
             id: 4,
-            nombre: 'Mochila wayuu azul 6',
-            precio: 120000,
+            nombre: 'Parlande de Alto Sonido LG',
+            precio: 865899,
             imagen: 'assets/img/shop_04.jpg',
             categoria: 'mochilas'
         },
         {
             id: 5,
-            nombre: 'Bolso en fique',
-            precio: 120000,
-            imagen: 'assets/img/shop_03.jpg',
+            nombre: 'Aire Acondicionado Westinghouse    ',
+            precio: 1000000,
+            imagen: 'assets/img/shop_03.avif',
             categoria: 'bolsos'
         },
         {
             id: 6,
-            nombre: 'Hamaca',
-            precio: 120000,
+            nombre: 'Nevera Tactil Samsung',
+            precio: 1200000,
             imagen: 'assets/img/category_img_02.jpg',
             categoria: 'hamacas'
         }
